@@ -19,3 +19,20 @@ const obj2={4:"d",5:"e",6:"f"}
 const obj3={7:"g",8:"h",9:"i"}
 const obj4={...obj1,...obj2,...obj3}
 console.log(obj4)
+const user1=[
+    {
+        uid:1,
+        email:"sk@gmail.com"
+    },
+    {
+        uid:1,
+        email:"sk@gmail.com"
+    },
+    {
+        uid:1,
+        email:"sk@gmail.com"
+    }
+]
+console.log(Tinder.id)
+console.log(Object.keys(Tinder))
+console.log(Object.values(Tinder))
