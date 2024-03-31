@@ -36,3 +36,12 @@ const user1=[
 console.log(Tinder.id)
 console.log(Object.keys(Tinder))
 console.log(Object.values(Tinder))
+
+const Boli = {
+    Name1 :"Sandeep",
+    Age:22,
+    Price:1000000
+
+}
+const {Name1: N}=Boli
+console.log(N)
