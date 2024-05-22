@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+   
+</head>
+ 
+<body style="background-color: rgb(26, 22, 22); color: #fff;">
+    <div class="parent">
+        <div class="Days">Monday</div>
+        <div class="Days">tuesday</div>
+        <div class="Days">wednesday</div>
+        <div class="Days">Thusday</div>
+        <div class="Days">Friday</div>
+        <div class="Days">Satday</div>
+        <div class="Days">Sunday</div>
+
+
+    </div>
+
+    
+</body>
+<script>
+ const parents =document.querySelector('.parent');
+//    console.log(parents);
+// for (let i = 0; i < parents.children.length; i++) {
+//     console.log(parents.children[i].innerHTML);
+    
+// }
+parents.children[1].style.color="yellow";
+console.log(parents.firstElementChild.innerHTML)
+</script>
+</html>
