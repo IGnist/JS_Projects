@@ -8,17 +8,34 @@
 <body style=" background-color: blanchedalmond; color: black;">
     <ul class="list">
         <li>JAVA</li>
+        <li>JAVA</li>
+        <li>JAVA</li>
+        <li>JAVA</li>
+       
     </ul>
     
 </body>
 <script>
-    function AddLanguage(languages){
-        const li=document.createElement('li')
-        li.innerHTML=`${languages}`;
-        document.querySelector('.list').append(li);
+//      function AddLanguage(languages){
+//         const li=document.createElement('li')
+//         li.innerHTML=`${languages}`;
+//         document.querySelector('.list').appendChild(li);
 
-    }
-     AddLanguage('Python')
-     AddLanguage('C++')
+//  }
+    // function addcode(languages){
+    //     const li=document.createElement('li');
+    //     li.appendChild(document.createTextNode(languages));
+    //     document.querySelector('.list').appendChild(li);
+    // }
+    //  AddLanguage('Python')
+    //  AddLanguage('C++')
+    //  addcode('mongo');
+     const secondlang=document.querySelector("li:nth-child(2)");
+     secondlang.innerHTML="GOlang";
+     const lang=document.createElement('li');
+     lang.textContent="huihui"; 
+     const thirdlang=document.querySelector("li:nth-child(3)");
+    thirdlang.replaceWith(lang);
+
 </script>
 </html>
