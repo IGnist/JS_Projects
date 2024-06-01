@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: darkslategray; color: aliceblue;">
     <h2>This is an Image Gallery</h2>
-    <ul class="Images">
+    <ul id="Images">
         <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
             <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
@@ -18,9 +18,25 @@
     
 </body>
 <script>
-    document.getElementById('owl').onclick=function(){
-        alert('Howl')
-    }
+    // document.getElementById('owl').onclick=function(){
+    //     alert('Howl')
+    // }
+    // document.getElementById('owl').addEventListener('click',function(e){
+    // console.log(e);        
+    // })
+    //type
+    //time stamp
+    //default prevented
+    //target ,toelement,source element
+    //altkey,ctrl key,shiftkey,keycode
+    document.querySelector('#Images').addEventListener('click',function(e){
+        console.log(e.target.id);
+        if(e.target.tagName==='IMG'){
+        let removeit=e.target.parentNode;
+         removeit.remove()
+        }
+        //removeit.parentNode.removeChild(removeit)
 
+    },false)
 </script>
 </html>
