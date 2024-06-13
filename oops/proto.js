@@ -19,3 +19,8 @@ Array.prototype.sandy=function(){
 }
 heroes.sandy();
 // herospower.sandy();
+
+String.prototype.truelength=function(){
+    console.log(`True Length is ${this.trim().length}`)
+}
+"sandeep".truelength()
