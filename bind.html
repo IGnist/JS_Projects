@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind</title>
+</head>
+
+<body>
+    <button class="slr">CLICK ME</button>
+
+</body>
+<script>
+    class user {
+        constructor() {
+            this.Server = "library";
+            this.Port = "htts://localhost:3000";
+            document.querySelector('button').addEventListener('click', this.handleclick.bind(this))
+        }
+        handleclick() {
+            
+            console.log("button clicked");
+            console.log(this.Port);
+        }
+    }
+    const app = new user()
+</Script>
+
+</html>
